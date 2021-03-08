@@ -4,14 +4,14 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     email: { type: String, required: true },
     email_verified: {type: Boolean, required: true},
-    family_name: { type: String, required: true },
-    given_name: { type: String, required: true },
-    locale: { type: String, required: true },
-    name: { type: String, required: true },
-    nickname: { type: String, required: true },
-    picture: { type: String, required: true },
-    sub: { type: String, required: true },
-    updated_at: { type: String, required: true },
+    family_name: { type: String, required: false },
+    given_name: { type: String, required: false },
+    locale: { type: String, required: false },
+    name: { type: String, required: false },
+    nickname: { type: String, required: false },
+    picture: { type: String, required: false },
+    sub: { type: String, required: false },
+    updated_at: { type: String, required: false },
 
 })
 
